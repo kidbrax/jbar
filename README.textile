@@ -2,6 +2,21 @@ This is an example of the jbar plugin for jquery which provides twitter/stackove
 
 It was inspired by http://tympanus.net/codrops/2009/10/29/jbar-a-jquery-notification-plugin/
 
+Example usage:
+
+<pre>
+  jQuery(document).ready(function($) {
+    $('body').bar({
+      message : "Your custom message goes here!",
+      color: 'white',
+      background_color: 'black',
+      position: "top",
+      removebutton: true,
+      time: 3000
+    });
+  });
+</pre>
+
 Available options to be passed to the bar() function are:
 
 <pre>
