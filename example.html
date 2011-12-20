@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jbar example</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="jquery.bar.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    jQuery(document).ready(function($) {
+      $('body').bar({
+        message : "Your custom message goes here!",
+        color: 'white',
+        background_color: 'black',
+        position: "top",
+        removebutton: true,
+        time: 3000
+      });
+    });
+    
+  </script>
+</head>
+<body>
+  <header>This is an example of the jbar plugin for jquery</header>
+
+  <p>It was inspired by http://tympanus.net/codrops/2009/10/29/jbar-a-jquery-notification-plugin/</p>
+
+  <p>Available options to be passed to the bar() function are:</p>
+
+  <pre>
+    background_color: '#FFFFFF',
+    color: '#000',
+    position: 'top', // position of notification bar, bottom or top
+    removebutton: true, //whether or not to remove the closing button
+    time: 5000 //amount of time before bar disappears
+  </pre>
+
+</body>
+</html>
