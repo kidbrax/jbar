@@ -23,7 +23,8 @@ Available options to be passed to the bar() function are:
   background_color: '#FFFFFF',
   color: '#000',
   position: 'top', // position of notification bar, bottom or top
-  removebutton: true, //whether or not to remove the closing button
-  time: 5000 //amount of time before bar disappears
+  removebutton: true, //whether or not to remove the closing button. If you remove the button, user can click anywhere on the bar to close it
+  closeDelay: 5000 //amount of time before bar disappears
+  autoClose: true //whether or not the bar will close by itself after the time specified in the closeDelay option
 </pre>
 

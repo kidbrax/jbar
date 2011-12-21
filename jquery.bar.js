@@ -9,7 +9,7 @@
       var o = $.meta ? $.extend({}, opts, $this.data()) : opts;
 
       if(!$('.jbar').length) {
-        timeout = setTimeout('jQuery.fn.bar.removebar()', o.time);
+        if (o.autoClose) timeout = setTimeout('jQuery.fn.bar.removebar()', o.closeDelay);
         var _message_span = $(document.createElement('span'))
           .addClass('jbar-content')
           .html(o.message)
@@ -63,7 +63,7 @@
     color: '#000',
     position: 'top',
     removebutton: true,
-    time: 5000
+    closeDelay: 5000
   };
 
 })(jQuery);
